@@ -12,7 +12,7 @@ count = 0
 skip = False
 
 for file_number, file in enumerate(files):
-    if count % 20 == 0:
+    if file_number % 20 == 0:
         print(f"{file_number}/{len(files)} completed")
 
     if HALFEN_FRAMES and skip:
